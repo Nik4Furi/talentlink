@@ -1,9 +1,32 @@
-*{
-  margin: 0;
-  padding: 0;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Sofia+Sans:ital,wght@0,200;0,400;1,200&display=swap');
+
+:root{
+  --main-col : #832D83;
+  ---main-bg : #fffaff ;
+  --font-1 : 'Roboto', sans-serif;
+  --font-2 : 'Sofia Sans', sans-serif;
+
+  font-family:  'Sofia Sans', sans-serif;
+  /* font-family:  'Roboto', sans-serif; */
 }
-body{
-  width: 100vw;
-  height: 100vh;
-  box-sizing: border-box;
+
+.text-highlight{
+  font-weight: bold;
+  color: var(--main-col);
+  font-family: var(--font-1);
+}
+.btn-primary,.bg-primary{
+  background: var(--main-col) !important;
+  
+}
+.bg-secondary{
+  background: var(---main-bg) !important;
+}
+
+/* Font Families */
+.f1{ /* Secondary or Heading or highlighting font, use minimum time*/
+  font-family: var(--font-1);
+}
+.f2{ /* Its primary font, use maximum time*/
+  font-family: var(--font-2);
 }
